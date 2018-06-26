@@ -1,0 +1,20 @@
+
+手动添加第三方框架步骤：
+1、添加.xcodeproj文件
+2、添加对应的framework框架
+
+常用第三方库：
+https://www.cnblogs.com/fengmin/p/6923328.html
+https://blog.csdn.net/iOS__feng/article/details/79312344
+一、网络请求
+1、Alamofire 、 AlamofireImage
+2、Moya/Moya
+3、SwiftyJSON
+4、加载提示：SwiftNotice、SwiftProgressHUD、Chrysan
+二、
+1、下拉刷新：ESPullToRefresh
+    swift-Refresh.png
+    下面三个只能下拉？？？？
+    DGElasticPullToRefresh / BreakOutToRefresh / PullToBounce
+
+三、

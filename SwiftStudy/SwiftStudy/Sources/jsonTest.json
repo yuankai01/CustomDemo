@@ -1,0 +1,8 @@
+{
+    "type": "adlfa",
+    "list": [
+             {"type1": "MultiPolygon"},
+             {"type1": "MultiPolygon"},
+             {"type1": "MultiPolygon"}
+             ]
+}

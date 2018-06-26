@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CETCUploadImagesVC" customModule="CETCPartyBuilding" customModuleProvider="target">
+            <connections>
+                <outlet property="loadedImgView" destination="2aL-fK-ulC" id="HfT-vg-hOb"/>
+                <outlet property="uploadImgBtn" destination="gf1-Ib-i7b" id="Zx4-HE-MmB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2aL-fK-ulC">
+                    <rect key="frame" x="19.5" y="150" width="335" height="251.5"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="2aL-fK-ulC" secondAttribute="height" multiplier="4:3" id="o6a-gV-1rO"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gf1-Ib-i7b" userLabel="UploadBtn">
+                    <rect key="frame" x="20" y="70" width="335" height="40"/>
+                    <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hQs-Gm-2cC"/>
+                    </constraints>
+                    <state key="normal" title="上传图片">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="uploadImage:" destination="-1" eventType="touchUpInside" id="891-lt-jnR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="2aL-fK-ulC" firstAttribute="top" secondItem="gf1-Ib-i7b" secondAttribute="bottom" constant="40" id="THC-8L-iQR"/>
+                <constraint firstItem="gf1-Ib-i7b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UMs-3j-YNT"/>
+                <constraint firstItem="2aL-fK-ulC" firstAttribute="centerX" secondItem="gf1-Ib-i7b" secondAttribute="centerX" id="bkH-GH-Rbi"/>
+                <constraint firstItem="gf1-Ib-i7b" firstAttribute="leading" secondItem="QYZ-2Q-AuY" secondAttribute="leading" constant="20" id="c5J-Bv-Nme"/>
+                <constraint firstItem="gf1-Ib-i7b" firstAttribute="top" secondItem="QYZ-2Q-AuY" secondAttribute="top" constant="50" id="oeT-BZ-EKq"/>
+                <constraint firstItem="QYZ-2Q-AuY" firstAttribute="trailing" secondItem="gf1-Ib-i7b" secondAttribute="trailing" constant="20" id="uZ0-Pm-68P"/>
+                <constraint firstItem="2aL-fK-ulC" firstAttribute="width" secondItem="gf1-Ib-i7b" secondAttribute="width" id="zrJ-Ym-mnT"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="QYZ-2Q-AuY"/>
+            <point key="canvasLocation" x="-64" y="26"/>
+        </view>
+    </objects>
+</document>
