@@ -9,7 +9,7 @@
 import UIKit
 
 class CETCSwiftTestVC: CETCSwiftBaseVC {
-
+    
     //声明属性 必须初始化赋值：空值或真实值
     var requestUrl: String = ""
     /*
