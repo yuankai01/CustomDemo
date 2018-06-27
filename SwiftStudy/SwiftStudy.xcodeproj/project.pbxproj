@@ -33,10 +33,14 @@
 		3E09806420DA4A4E009201A9 /* CETCSwiftBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E09806020DA4A4C009201A9 /* CETCSwiftBaseVC.swift */; };
 		3E0DE8D920DCD3A5007D7021 /* ArrayDicSetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0DE8D320DCD3A5007D7021 /* ArrayDicSetTest.swift */; };
 		3E0DE8DA20DCD3A5007D7021 /* CETCSwiftTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0DE8D420DCD3A5007D7021 /* CETCSwiftTestVC.swift */; };
-		3E0DE8DB20DCD3A5007D7021 /* TestAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0DE8D520DCD3A5007D7021 /* TestAView.swift */; };
 		3E0DE8DC20DCD3A5007D7021 /* TestObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0DE8D620DCD3A5007D7021 /* TestObj.swift */; };
 		3E0DE8DD20DCD3A5007D7021 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0DE8D720DCD3A5007D7021 /* TestViewController.swift */; };
 		3E0DE8DE20DCD3A5007D7021 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E0DE8D820DCD3A5007D7021 /* TestViewController.xib */; };
+		3E8D214A20E37BBB00AF22EF /* StringCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D214920E37BBB00AF22EF /* StringCharacter.swift */; };
+		3E8D216620E37BF500AF22EF /* ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D216520E37BF500AF22EF /* ControlFlow.swift */; };
+		3E8D216A20E37C1C00AF22EF /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D216920E37C1C00AF22EF /* Closures.swift */; };
+		3E8D216C20E37C4500AF22EF /* Functions&Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D216B20E37C4500AF22EF /* Functions&Methods.swift */; };
+		3E8D216E20E37C9200AF22EF /* Enumerations&Class&Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8D216D20E37C9200AF22EF /* Enumerations&Class&Struct.swift */; };
 		3E97918120DB38C50092F244 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E97917420DB38B80092F244 /* SwiftyJSON.framework */; };
 		3E97918620DB39F00092F244 /* UIAlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97918220DB39EC0092F244 /* UIAlertExtension.swift */; };
 		3E97918720DB39F00092F244 /* Base64Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E97918320DB39EE0092F244 /* Base64Encode.swift */; };
@@ -256,10 +260,14 @@
 		3E09806020DA4A4C009201A9 /* CETCSwiftBaseVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CETCSwiftBaseVC.swift; sourceTree = "<group>"; };
 		3E0DE8D320DCD3A5007D7021 /* ArrayDicSetTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayDicSetTest.swift; sourceTree = "<group>"; };
 		3E0DE8D420DCD3A5007D7021 /* CETCSwiftTestVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CETCSwiftTestVC.swift; sourceTree = "<group>"; };
-		3E0DE8D520DCD3A5007D7021 /* TestAView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAView.swift; sourceTree = "<group>"; };
 		3E0DE8D620DCD3A5007D7021 /* TestObj.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestObj.swift; sourceTree = "<group>"; };
 		3E0DE8D720DCD3A5007D7021 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		3E0DE8D820DCD3A5007D7021 /* TestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		3E8D214920E37BBB00AF22EF /* StringCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringCharacter.swift; sourceTree = "<group>"; };
+		3E8D216520E37BF500AF22EF /* ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlFlow.swift; sourceTree = "<group>"; };
+		3E8D216920E37C1C00AF22EF /* Closures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Closures.swift; sourceTree = "<group>"; };
+		3E8D216B20E37C4500AF22EF /* Functions&Methods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Functions&Methods.swift"; sourceTree = "<group>"; };
+		3E8D216D20E37C9200AF22EF /* Enumerations&Class&Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enumerations&Class&Struct.swift"; sourceTree = "<group>"; };
 		3E97916820DB38B80092F244 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		3E97918220DB39EC0092F244 /* UIAlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIAlertExtension.swift; sourceTree = "<group>"; };
 		3E97918320DB39EE0092F244 /* Base64Encode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base64Encode.swift; sourceTree = "<group>"; };
@@ -473,12 +481,16 @@
 		3E0DE8D220DCD3A5007D7021 /* TestFiles */ = {
 			isa = PBXGroup;
 			children = (
-				3E0DE8D320DCD3A5007D7021 /* ArrayDicSetTest.swift */,
 				3E0DE8D420DCD3A5007D7021 /* CETCSwiftTestVC.swift */,
-				3E0DE8D520DCD3A5007D7021 /* TestAView.swift */,
 				3E0DE8D620DCD3A5007D7021 /* TestObj.swift */,
 				3E0DE8D720DCD3A5007D7021 /* TestViewController.swift */,
 				3E0DE8D820DCD3A5007D7021 /* TestViewController.xib */,
+				3E0DE8D320DCD3A5007D7021 /* ArrayDicSetTest.swift */,
+				3E8D214920E37BBB00AF22EF /* StringCharacter.swift */,
+				3E8D216D20E37C9200AF22EF /* Enumerations&Class&Struct.swift */,
+				3E8D216520E37BF500AF22EF /* ControlFlow.swift */,
+				3E8D216B20E37C4500AF22EF /* Functions&Methods.swift */,
+				3E8D216920E37C1C00AF22EF /* Closures.swift */,
 			);
 			path = TestFiles;
 			sourceTree = "<group>";
@@ -790,6 +802,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8D216E20E37C9200AF22EF /* Enumerations&Class&Struct.swift in Sources */,
 				3E09800E20D9FF7A009201A9 /* ImageTextFiledView.swift in Sources */,
 				3E9791C120DB47AE0092F244 /* CETCSwiftCollectionViewVC.swift in Sources */,
 				3E09801F20DA269A009201A9 /* LoginBgImageVC.swift in Sources */,
@@ -811,16 +824,19 @@
 				3E09800A20D9FF7A009201A9 /* ColorConst.swift in Sources */,
 				3E09802120DA269A009201A9 /* ParseFile.swift in Sources */,
 				3E9791C220DB47AE0092F244 /* CETCSwiftTableviewVC.swift in Sources */,
+				3E8D216620E37BF500AF22EF /* ControlFlow.swift in Sources */,
 				3E9791B920DB47AD0092F244 /* CETCLearnPlanCell.swift in Sources */,
 				3E09802320DA269A009201A9 /* RegisterViewController.swift in Sources */,
 				3E0DE8D920DCD3A5007D7021 /* ArrayDicSetTest.swift in Sources */,
 				3E9791AB20DB47690092F244 /* CETCSwiftNetWork.swift in Sources */,
 				3E09801C20DA269A009201A9 /* AgreementViewController.swift in Sources */,
-				3E0DE8DB20DCD3A5007D7021 /* TestAView.swift in Sources */,
+				3E8D214A20E37BBB00AF22EF /* StringCharacter.swift in Sources */,
+				3E8D216A20E37C1C00AF22EF /* Closures.swift in Sources */,
 				3E09800C20D9FF7A009201A9 /* FontSizeConst.swift in Sources */,
 				3E09802020DA269A009201A9 /* LoginViewController.swift in Sources */,
 				3E097F5220D9FF7A009201A9 /* JsonTest2Model.swift in Sources */,
 				3E9791D520DB71740092F244 /* UserModel.swift in Sources */,
+				3E8D216C20E37C4500AF22EF /* Functions&Methods.swift in Sources */,
 				3E97918820DB39F00092F244 /* StringMd5.swift in Sources */,
 				3E9791AC20DB47690092F244 /* CETCSwiftInterface.swift in Sources */,
 				3E97918B20DB39FF0092F244 /* Swift_pch.swift in Sources */,

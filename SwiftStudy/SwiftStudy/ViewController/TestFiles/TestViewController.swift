@@ -23,7 +23,6 @@ class TestViewController: UIViewController {
     
     var password = UILabel.init()
     
-    var aView: TestAView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,9 +35,6 @@ class TestViewController: UIViewController {
         nameLab = UILabel.init(frame: CGRect.init(x: 200, y: 200, width: 100, height: 50))
         nameLab.backgroundColor = UIColor.cyan
         self.view .addSubview(nameLab)
-        
-        aView = TestAView.init(frame: CGRect.zero)
-        aView.publicMethod()
     }
 
     override func didReceiveMemoryWarning() {
