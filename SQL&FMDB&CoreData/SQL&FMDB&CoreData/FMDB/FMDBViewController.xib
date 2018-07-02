@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMDBViewController">
+            <connections>
+                <outlet property="tableView" destination="QcO-by-uYx" id="5Rl-tD-Fa4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hrL-vL-14s">
+                    <rect key="frame" x="10" y="30" width="355" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3yJ-ID-MFT">
+                            <rect key="frame" x="0.0" y="0.0" width="51" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="创建表"/>
+                            <connections>
+                                <action selector="creatTable:" destination="-1" eventType="touchUpInside" id="EMA-h9-qJu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qKi-bo-RWq">
+                            <rect key="frame" x="61" y="0.0" width="50.5" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="插入"/>
+                            <connections>
+                                <action selector="insert:" destination="-1" eventType="touchUpInside" id="aPL-DR-n8t"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRJ-Ih-WSd">
+                            <rect key="frame" x="121.5" y="0.0" width="51" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="删除"/>
+                            <connections>
+                                <action selector="delete:" destination="-1" eventType="touchUpInside" id="mXd-AV-MUk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPw-ZS-VRg">
+                            <rect key="frame" x="182.5" y="0.0" width="51" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="查询"/>
+                            <connections>
+                                <action selector="select:" destination="-1" eventType="touchUpInside" id="tCf-Ne-z7x"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnS-BW-K6j">
+                            <rect key="frame" x="243.5" y="0.0" width="50.5" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="修改"/>
+                            <connections>
+                                <action selector="modify:" destination="-1" eventType="touchUpInside" id="yaJ-Nh-d2j"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRe-n1-LLs">
+                            <rect key="frame" x="304" y="0.0" width="51" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="删除表"/>
+                            <connections>
+                                <action selector="deleteTable:" destination="-1" eventType="touchUpInside" id="SjV-xL-bvi"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="vld-RF-d4o"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="05y-8b-Ix1" userLabel="SecStackView">
+                    <rect key="frame" x="10" y="75" width="355" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aac-md-Wep">
+                            <rect key="frame" x="0.0" y="0.0" width="172.5" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="fmdbQueue多线程安全"/>
+                            <connections>
+                                <action selector="fmdbQueue:" destination="-1" eventType="touchUpInside" id="0kC-yf-Hj8"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYK-6f-bAu">
+                            <rect key="frame" x="182.5" y="0.0" width="172.5" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="多线程不安全"/>
+                            <connections>
+                                <action selector="mutiThreadGCD:" destination="-1" eventType="touchUpInside" id="bbx-EQ-KQQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="lKY-zr-EbR"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QcO-by-uYx">
+                    <rect key="frame" x="0.0" y="120" width="375" height="537"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="05y-8b-Ix1" firstAttribute="trailing" secondItem="hrL-vL-14s" secondAttribute="trailing" id="0W9-lG-6hv"/>
+                <constraint firstItem="QcO-by-uYx" firstAttribute="top" secondItem="05y-8b-Ix1" secondAttribute="bottom" constant="5" id="6Rw-Gk-DqF"/>
+                <constraint firstItem="hrL-vL-14s" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="10" id="CeM-O5-gEU"/>
+                <constraint firstItem="QcO-by-uYx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Cxw-en-HDo"/>
+                <constraint firstItem="05y-8b-Ix1" firstAttribute="leading" secondItem="hrL-vL-14s" secondAttribute="leading" id="Drl-xn-wm7"/>
+                <constraint firstItem="hrL-vL-14s" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="VSa-T3-gEc"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="QcO-by-uYx" secondAttribute="bottom" constant="10" id="Zwp-fd-p5U"/>
+                <constraint firstItem="05y-8b-Ix1" firstAttribute="top" secondItem="hrL-vL-14s" secondAttribute="bottom" constant="5" id="bL4-d9-8ei"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hrL-vL-14s" secondAttribute="trailing" constant="10" id="sJW-XU-Drn"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="QcO-by-uYx" secondAttribute="trailing" id="yn8-61-y8M"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>
