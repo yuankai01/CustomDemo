@@ -6,7 +6,7 @@
 //  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
 //
 
-#import "NSString+hash.h"
+#import "NSString+Hash.h"
 #import <CommonCrypto/CommonDigest.h>
 #import <CommonCrypto/CommonHMAC.h>
 
@@ -20,6 +20,7 @@
     CC_MD5(string, length, bytes);
     return [self stringFromBytes:bytes length:CC_MD5_DIGEST_LENGTH];
 }
+
 - (NSString *)sha1String
 {
     const char *string = self.UTF8String;

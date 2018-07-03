@@ -10,9 +10,12 @@
 
 @interface NSString (Encrypt)
 
+//两个都是对称加密
+//AES加密
 - (NSString*)encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv;
 - (NSString*)decryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv;
 
+//3DES加密
 - (NSString*)encryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
 - (NSString*)decryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
 

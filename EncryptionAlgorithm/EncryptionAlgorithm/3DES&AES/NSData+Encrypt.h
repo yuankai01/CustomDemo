@@ -9,11 +9,16 @@
 #import <Foundation/Foundation.h>
 
 @interface NSData (Encrypt)
+
+//两个都是对称加密
+//AES加密
 - (NSData *)encryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv;
 - (NSData *)decryptedWithAESUsingKey:(NSString*)key andIV:(NSData*)iv;
 
+//3DES加密
 - (NSData *)encryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
 - (NSData *)decryptedWith3DESUsingKey:(NSString*)key andIV:(NSData*)iv;
 
 - (NSString *)UTF8String;
+
 @end

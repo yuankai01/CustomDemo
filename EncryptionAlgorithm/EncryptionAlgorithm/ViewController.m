@@ -52,7 +52,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor =  [UIColor cyanColor];
     
-    dataArray = @[@"MD5",@"RSA",@"Base64",@"3DES"];
+    dataArray = @[@"MD5",@"Base64",@"3DES",@"AES",@"RSA",@"SHA"];
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
