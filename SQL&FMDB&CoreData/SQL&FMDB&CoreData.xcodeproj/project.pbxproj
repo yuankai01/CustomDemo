@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E128EE220CFB2A200D6DD15 /* Course+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E128EDE20CFB2A200D6DD15 /* Course+CoreDataClass.m */; };
+		3E16457020CF535B00FADD67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E16456F20CF535B00FADD67 /* ViewController.m */; };
+		3E16459320CF53B500FADD67 /* CoreDataViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E16457320CF53B500FADD67 /* CoreDataViewCell.m */; };
+		3E16459420CF53B500FADD67 /* CoreDataViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E16457420CF53B500FADD67 /* CoreDataViewCell.xib */; };
+		3E16459520CF53B500FADD67 /* CoreDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E16457620CF53B500FADD67 /* CoreDataViewController.m */; };
+		3E16459620CF53B500FADD67 /* CoreDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E16457720CF53B500FADD67 /* CoreDataViewController.xib */; };
+		3E16459E20CF53B500FADD67 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E16458920CF53B500FADD67 /* FMDBViewController.m */; };
+		3E16459F20CF53B500FADD67 /* FMDBViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E16458A20CF53B500FADD67 /* FMDBViewController.xib */; };
+		3E1645A020CF53B500FADD67 /* SQLDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E16458D20CF53B500FADD67 /* SQLDB.m */; };
+		3E1645A120CF53B500FADD67 /* SQLService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E16458F20CF53B500FADD67 /* SQLService.m */; };
+		3E1645A220CF53B500FADD67 /* SQLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E16459120CF53B500FADD67 /* SQLViewController.m */; };
+		3E1645A320CF53B500FADD67 /* SQLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E16459220CF53B500FADD67 /* SQLViewController.xib */; };
+		3E1645A620CF541A00FADD67 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E1645A520CF541A00FADD67 /* libsqlite3.0.tbd */; };
+		3E1645C720CF986500FADD67 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E1645C520CF986500FADD67 /* Model.xcdatamodeld */; };
+		3E50CEB520CDFCC40094C93E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E50CEB420CDFCC40094C93E /* AppDelegate.m */; };
+		3E50CEBB20CDFCC70094C93E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E50CEB920CDFCC70094C93E /* Main.storyboard */; };
+		3E50CEBE20CDFCC80094C93E /* SQL_FMDB_CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E50CEBC20CDFCC80094C93E /* SQL_FMDB_CoreData.xcdatamodeld */; };
+		3E50CEC020CDFD7F0094C93E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E50CEBF20CDFD7F0094C93E /* Assets.xcassets */; };
+		3E50CEC320CDFD800094C93E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E50CEC120CDFD800094C93E /* LaunchScreen.storyboard */; };
+		3E50CEC620CDFD830094C93E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E50CEC520CDFD830094C93E /* main.m */; };
+		3E50CF4320CE61450094C93E /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E50CF4220CE61450094C93E /* image1.png */; };
+		3E50CF4620CE61B40094C93E /* image2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E50CF4420CE61B30094C93E /* image2.png */; };
+		3E50CF4720CE61B40094C93E /* image3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E50CF4520CE61B30094C93E /* image3.png */; };
+		3E578BE320D2245B001B190E /* z_pk.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E578BE220D2245A001B190E /* z_pk.png */; };
+		3EBDA6C820D0FC0E00D62F27 /* sql-dmg.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBDA6C720D0FC0E00D62F27 /* sql-dmg.png */; };
+		3EDCBBBF20CFACBC008FBA7C /* Employees+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDCBBB420CFACBC008FBA7C /* Employees+CoreDataClass.m */; };
+		3EDCBBC020CFACBC008FBA7C /* Employees+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDCBBB620CFACBC008FBA7C /* Employees+CoreDataProperties.m */; };
+		3EEBBC0520D1FE6700C9F71D /* Student+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBBBFF20D1FE6700C9F71D /* Student+CoreDataProperties.m */; };
+		3EEBBC0620D1FE6700C9F71D /* Student+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBBC0020D1FE6700C9F71D /* Student+CoreDataClass.m */; };
+		3EEBBC0720D1FE6700C9F71D /* Clazz+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBBC0320D1FE6700C9F71D /* Clazz+CoreDataClass.m */; };
+		3EEBBC0820D1FE6700C9F71D /* Clazz+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EEBBC0420D1FE6700C9F71D /* Clazz+CoreDataProperties.m */; };
+		3EF3CCF920D39F4100ECF286 /* Course+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3CCF820D39F4100ECF286 /* Course+CoreDataProperties.m */; };
+		3EF3CD0920D3AAF800ECF286 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3CCFC20D3AAF800ECF286 /* FMDatabase.m */; };
+		3EF3CD0A20D3AAF800ECF286 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3CCFE20D3AAF800ECF286 /* FMDatabaseAdditions.m */; };
+		3EF3CD0B20D3AAF800ECF286 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3CD0020D3AAF800ECF286 /* FMDatabasePool.m */; };
+		3EF3CD0C20D3AAF800ECF286 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3CD0220D3AAF800ECF286 /* FMDatabaseQueue.m */; };
+		3EF3CD0D20D3AAF800ECF286 /* FMDBMigrationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3CD0520D3AAF800ECF286 /* FMDBMigrationManager.m */; };
+		3EF3CD0E20D3AAF800ECF286 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF3CD0720D3AAF800ECF286 /* FMResultSet.m */; };
+		3EF3CD0F20D3AAF800ECF286 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3EF3CD0820D3AAF800ECF286 /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E128EDE20CFB2A200D6DD15 /* Course+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Course+CoreDataClass.m"; sourceTree = "<group>"; };
+		3E128EE020CFB2A200D6DD15 /* Course+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Course+CoreDataClass.h"; sourceTree = "<group>"; };
+		3E128EE420CFB3E900D6DD15 /* Model 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 4.xcdatamodel"; sourceTree = "<group>"; };
+		3E16456E20CF535B00FADD67 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3E16456F20CF535B00FADD67 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3E16457220CF53B500FADD67 /* CoreDataViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataViewCell.h; sourceTree = "<group>"; };
+		3E16457320CF53B500FADD67 /* CoreDataViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewCell.m; sourceTree = "<group>"; };
+		3E16457420CF53B500FADD67 /* CoreDataViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataViewCell.xib; sourceTree = "<group>"; };
+		3E16457520CF53B500FADD67 /* CoreDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataViewController.h; sourceTree = "<group>"; };
+		3E16457620CF53B500FADD67 /* CoreDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataViewController.m; sourceTree = "<group>"; };
+		3E16457720CF53B500FADD67 /* CoreDataViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoreDataViewController.xib; sourceTree = "<group>"; };
+		3E16458820CF53B500FADD67 /* FMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
+		3E16458920CF53B500FADD67 /* FMDBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBViewController.m; sourceTree = "<group>"; };
+		3E16458A20CF53B500FADD67 /* FMDBViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMDBViewController.xib; sourceTree = "<group>"; };
+		3E16458C20CF53B500FADD67 /* SQLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLDB.h; sourceTree = "<group>"; };
+		3E16458D20CF53B500FADD67 /* SQLDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLDB.m; sourceTree = "<group>"; };
+		3E16458E20CF53B500FADD67 /* SQLService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLService.h; sourceTree = "<group>"; };
+		3E16458F20CF53B500FADD67 /* SQLService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLService.m; sourceTree = "<group>"; };
+		3E16459020CF53B500FADD67 /* SQLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLViewController.h; sourceTree = "<group>"; };
+		3E16459120CF53B500FADD67 /* SQLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLViewController.m; sourceTree = "<group>"; };
+		3E16459220CF53B500FADD67 /* SQLViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SQLViewController.xib; sourceTree = "<group>"; };
+		3E1645A520CF541A00FADD67 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3E1645C620CF986500FADD67 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		3E50CEB020CDFCC30094C93E /* SQL&FMDB&CoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SQL&FMDB&CoreData.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E50CEB320CDFCC40094C93E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3E50CEB420CDFCC40094C93E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E50CEBA20CDFCC70094C93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E50CEBD20CDFCC80094C93E /* SQL_FMDB_CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SQL_FMDB_CoreData.xcdatamodel; sourceTree = "<group>"; };
+		3E50CEBF20CDFD7F0094C93E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E50CEC220CDFD800094C93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E50CEC420CDFD830094C93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E50CEC520CDFD830094C93E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E50CF4220CE61450094C93E /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		3E50CF4420CE61B30094C93E /* image2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image2.png; sourceTree = "<group>"; };
+		3E50CF4520CE61B30094C93E /* image3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image3.png; sourceTree = "<group>"; };
+		3E578BE220D2245A001B190E /* z_pk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = z_pk.png; sourceTree = "<group>"; };
+		3EBDA6C720D0FC0E00D62F27 /* sql-dmg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sql-dmg.png"; sourceTree = "<group>"; };
+		3EDCBB8120CF9B8C008FBA7C /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		3EDCBB8220CF9B96008FBA7C /* Model 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 3.xcdatamodel"; sourceTree = "<group>"; };
+		3EDCBBB320CFACBC008FBA7C /* Employees+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Employees+CoreDataClass.h"; sourceTree = "<group>"; };
+		3EDCBBB420CFACBC008FBA7C /* Employees+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Employees+CoreDataClass.m"; sourceTree = "<group>"; };
+		3EDCBBB520CFACBC008FBA7C /* Employees+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Employees+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3EDCBBB620CFACBC008FBA7C /* Employees+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Employees+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3EEBBBFD20D1FE6700C9F71D /* Student+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataClass.h"; sourceTree = "<group>"; };
+		3EEBBBFE20D1FE6700C9F71D /* Student+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Student+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3EEBBBFF20D1FE6700C9F71D /* Student+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3EEBBC0020D1FE6700C9F71D /* Student+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Student+CoreDataClass.m"; sourceTree = "<group>"; };
+		3EEBBC0120D1FE6700C9F71D /* Clazz+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Clazz+CoreDataClass.h"; sourceTree = "<group>"; };
+		3EEBBC0220D1FE6700C9F71D /* Clazz+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Clazz+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3EEBBC0320D1FE6700C9F71D /* Clazz+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Clazz+CoreDataClass.m"; sourceTree = "<group>"; };
+		3EEBBC0420D1FE6700C9F71D /* Clazz+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Clazz+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3EF3CCF720D39F4100ECF286 /* Course+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Course+CoreDataProperties.h"; sourceTree = "<group>"; };
+		3EF3CCF820D39F4100ECF286 /* Course+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Course+CoreDataProperties.m"; sourceTree = "<group>"; };
+		3EF3CCFB20D3AAF800ECF286 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		3EF3CCFC20D3AAF800ECF286 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		3EF3CCFD20D3AAF800ECF286 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		3EF3CCFE20D3AAF800ECF286 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		3EF3CCFF20D3AAF800ECF286 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		3EF3CD0020D3AAF800ECF286 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		3EF3CD0120D3AAF800ECF286 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		3EF3CD0220D3AAF800ECF286 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		3EF3CD0320D3AAF800ECF286 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		3EF3CD0420D3AAF800ECF286 /* FMDBMigrationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBMigrationManager.h; sourceTree = "<group>"; };
+		3EF3CD0520D3AAF800ECF286 /* FMDBMigrationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDBMigrationManager.m; sourceTree = "<group>"; };
+		3EF3CD0620D3AAF800ECF286 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		3EF3CD0720D3AAF800ECF286 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		3EF3CD0820D3AAF800ECF286 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E50CEAD20CDFCC20094C93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E1645A620CF541A00FADD67 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E16457120CF53B500FADD67 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3EDCBBAA20CFACBC008FBA7C /* CoreModel */,
+				3E1645C520CF986500FADD67 /* Model.xcdatamodeld */,
+				3E16457520CF53B500FADD67 /* CoreDataViewController.h */,
+				3E16457620CF53B500FADD67 /* CoreDataViewController.m */,
+				3E16457720CF53B500FADD67 /* CoreDataViewController.xib */,
+				3E16457220CF53B500FADD67 /* CoreDataViewCell.h */,
+				3E16457320CF53B500FADD67 /* CoreDataViewCell.m */,
+				3E16457420CF53B500FADD67 /* CoreDataViewCell.xib */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		3E16457820CF53B500FADD67 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				3EF3CCFA20D3AAF800ECF286 /* fmdb */,
+				3E16458820CF53B500FADD67 /* FMDBViewController.h */,
+				3E16458920CF53B500FADD67 /* FMDBViewController.m */,
+				3E16458A20CF53B500FADD67 /* FMDBViewController.xib */,
+			);
+			path = FMDB;
+			sourceTree = "<group>";
+		};
+		3E16458B20CF53B500FADD67 /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				3E16458C20CF53B500FADD67 /* SQLDB.h */,
+				3E16458D20CF53B500FADD67 /* SQLDB.m */,
+				3E16458E20CF53B500FADD67 /* SQLService.h */,
+				3E16458F20CF53B500FADD67 /* SQLService.m */,
+				3E16459020CF53B500FADD67 /* SQLViewController.h */,
+				3E16459120CF53B500FADD67 /* SQLViewController.m */,
+				3E16459220CF53B500FADD67 /* SQLViewController.xib */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
+		3E1645A420CF541A00FADD67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3E1645A520CF541A00FADD67 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E50CEA720CDFCC00094C93E = {
+			isa = PBXGroup;
+			children = (
+				3EBDA6C720D0FC0E00D62F27 /* sql-dmg.png */,
+				3E50CF4220CE61450094C93E /* image1.png */,
+				3E50CF4420CE61B30094C93E /* image2.png */,
+				3E578BE220D2245A001B190E /* z_pk.png */,
+				3E50CF4520CE61B30094C93E /* image3.png */,
+				3E50CEB220CDFCC30094C93E /* SQL&FMDB&CoreData */,
+				3E50CEB120CDFCC30094C93E /* Products */,
+				3E1645A420CF541A00FADD67 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E50CEB120CDFCC30094C93E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E50CEB020CDFCC30094C93E /* SQL&FMDB&CoreData.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E50CEB220CDFCC30094C93E /* SQL&FMDB&CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				3E50CEB320CDFCC40094C93E /* AppDelegate.h */,
+				3E50CEB420CDFCC40094C93E /* AppDelegate.m */,
+				3E16456E20CF535B00FADD67 /* ViewController.h */,
+				3E16456F20CF535B00FADD67 /* ViewController.m */,
+				3E16458B20CF53B500FADD67 /* SQL */,
+				3E16457820CF53B500FADD67 /* FMDB */,
+				3E16457120CF53B500FADD67 /* CoreData */,
+				3E50CEB920CDFCC70094C93E /* Main.storyboard */,
+				3E50CEBF20CDFD7F0094C93E /* Assets.xcassets */,
+				3E50CEC120CDFD800094C93E /* LaunchScreen.storyboard */,
+				3E50CEC420CDFD830094C93E /* Info.plist */,
+				3E50CEC520CDFD830094C93E /* main.m */,
+				3E50CEBC20CDFCC80094C93E /* SQL_FMDB_CoreData.xcdatamodeld */,
+			);
+			path = "SQL&FMDB&CoreData";
+			sourceTree = "<group>";
+		};
+		3EDCBBAA20CFACBC008FBA7C /* CoreModel */ = {
+			isa = PBXGroup;
+			children = (
+				3EDCBBB320CFACBC008FBA7C /* Employees+CoreDataClass.h */,
+				3EDCBBB420CFACBC008FBA7C /* Employees+CoreDataClass.m */,
+				3EDCBBB520CFACBC008FBA7C /* Employees+CoreDataProperties.h */,
+				3EDCBBB620CFACBC008FBA7C /* Employees+CoreDataProperties.m */,
+				3E128EE020CFB2A200D6DD15 /* Course+CoreDataClass.h */,
+				3E128EDE20CFB2A200D6DD15 /* Course+CoreDataClass.m */,
+				3EF3CCF720D39F4100ECF286 /* Course+CoreDataProperties.h */,
+				3EF3CCF820D39F4100ECF286 /* Course+CoreDataProperties.m */,
+				3EEBBC0120D1FE6700C9F71D /* Clazz+CoreDataClass.h */,
+				3EEBBC0320D1FE6700C9F71D /* Clazz+CoreDataClass.m */,
+				3EEBBC0220D1FE6700C9F71D /* Clazz+CoreDataProperties.h */,
+				3EEBBC0420D1FE6700C9F71D /* Clazz+CoreDataProperties.m */,
+				3EEBBBFD20D1FE6700C9F71D /* Student+CoreDataClass.h */,
+				3EEBBC0020D1FE6700C9F71D /* Student+CoreDataClass.m */,
+				3EEBBBFE20D1FE6700C9F71D /* Student+CoreDataProperties.h */,
+				3EEBBBFF20D1FE6700C9F71D /* Student+CoreDataProperties.m */,
+			);
+			path = CoreModel;
+			sourceTree = "<group>";
+		};
+		3EF3CCFA20D3AAF800ECF286 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				3EF3CCFB20D3AAF800ECF286 /* FMDatabase.h */,
+				3EF3CCFC20D3AAF800ECF286 /* FMDatabase.m */,
+				3EF3CCFD20D3AAF800ECF286 /* FMDatabaseAdditions.h */,
+				3EF3CCFE20D3AAF800ECF286 /* FMDatabaseAdditions.m */,
+				3EF3CCFF20D3AAF800ECF286 /* FMDatabasePool.h */,
+				3EF3CD0020D3AAF800ECF286 /* FMDatabasePool.m */,
+				3EF3CD0120D3AAF800ECF286 /* FMDatabaseQueue.h */,
+				3EF3CD0220D3AAF800ECF286 /* FMDatabaseQueue.m */,
+				3EF3CD0320D3AAF800ECF286 /* FMDB.h */,
+				3EF3CD0420D3AAF800ECF286 /* FMDBMigrationManager.h */,
+				3EF3CD0520D3AAF800ECF286 /* FMDBMigrationManager.m */,
+				3EF3CD0620D3AAF800ECF286 /* FMResultSet.h */,
+				3EF3CD0720D3AAF800ECF286 /* FMResultSet.m */,
+				3EF3CD0820D3AAF800ECF286 /* Info.plist */,
+			);
+			path = fmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E50CEAF20CDFCC20094C93E /* SQL&FMDB&CoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E50CEC920CDFD830094C93E /* Build configuration list for PBXNativeTarget "SQL&FMDB&CoreData" */;
+			buildPhases = (
+				3E50CEAC20CDFCC20094C93E /* Sources */,
+				3E50CEAD20CDFCC20094C93E /* Frameworks */,
+				3E50CEAE20CDFCC20094C93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SQL&FMDB&CoreData";
+			productName = "SQL&FMDB&CoreData";
+			productReference = 3E50CEB020CDFCC30094C93E /* SQL&FMDB&CoreData.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E50CEA820CDFCC00094C93E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = gao;
+				TargetAttributes = {
+					3E50CEAF20CDFCC20094C93E = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 3E50CEAB20CDFCC00094C93E /* Build configuration list for PBXProject "SQL&FMDB&CoreData" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E50CEA720CDFCC00094C93E;
+			productRefGroup = 3E50CEB120CDFCC30094C93E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E50CEAF20CDFCC20094C93E /* SQL&FMDB&CoreData */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E50CEAE20CDFCC20094C93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E16459F20CF53B500FADD67 /* FMDBViewController.xib in Resources */,
+				3E50CEC320CDFD800094C93E /* LaunchScreen.storyboard in Resources */,
+				3E50CF4320CE61450094C93E /* image1.png in Resources */,
+				3EBDA6C820D0FC0E00D62F27 /* sql-dmg.png in Resources */,
+				3E50CF4720CE61B40094C93E /* image3.png in Resources */,
+				3E16459420CF53B500FADD67 /* CoreDataViewCell.xib in Resources */,
+				3E1645A320CF53B500FADD67 /* SQLViewController.xib in Resources */,
+				3E16459620CF53B500FADD67 /* CoreDataViewController.xib in Resources */,
+				3E50CEC020CDFD7F0094C93E /* Assets.xcassets in Resources */,
+				3E50CEBB20CDFCC70094C93E /* Main.storyboard in Resources */,
+				3E50CF4620CE61B40094C93E /* image2.png in Resources */,
+				3E578BE320D2245B001B190E /* z_pk.png in Resources */,
+				3EF3CD0F20D3AAF800ECF286 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E50CEAC20CDFCC20094C93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EDCBBC020CFACBC008FBA7C /* Employees+CoreDataProperties.m in Sources */,
+				3E1645A220CF53B500FADD67 /* SQLViewController.m in Sources */,
+				3E50CEB520CDFCC40094C93E /* AppDelegate.m in Sources */,
+				3EF3CD0920D3AAF800ECF286 /* FMDatabase.m in Sources */,
+				3E50CEC620CDFD830094C93E /* main.m in Sources */,
+				3EF3CD0B20D3AAF800ECF286 /* FMDatabasePool.m in Sources */,
+				3EF3CD0A20D3AAF800ECF286 /* FMDatabaseAdditions.m in Sources */,
+				3E16459520CF53B500FADD67 /* CoreDataViewController.m in Sources */,
+				3E16457020CF535B00FADD67 /* ViewController.m in Sources */,
+				3E128EE220CFB2A200D6DD15 /* Course+CoreDataClass.m in Sources */,
+				3E1645A020CF53B500FADD67 /* SQLDB.m in Sources */,
+				3E16459320CF53B500FADD67 /* CoreDataViewCell.m in Sources */,
+				3EF3CD0C20D3AAF800ECF286 /* FMDatabaseQueue.m in Sources */,
+				3EEBBC0520D1FE6700C9F71D /* Student+CoreDataProperties.m in Sources */,
+				3EF3CCF920D39F4100ECF286 /* Course+CoreDataProperties.m in Sources */,
+				3EF3CD0D20D3AAF800ECF286 /* FMDBMigrationManager.m in Sources */,
+				3E1645A120CF53B500FADD67 /* SQLService.m in Sources */,
+				3EEBBC0820D1FE6700C9F71D /* Clazz+CoreDataProperties.m in Sources */,
+				3EDCBBBF20CFACBC008FBA7C /* Employees+CoreDataClass.m in Sources */,
+				3EF3CD0E20D3AAF800ECF286 /* FMResultSet.m in Sources */,
+				3E16459E20CF53B500FADD67 /* FMDBViewController.m in Sources */,
+				3EEBBC0720D1FE6700C9F71D /* Clazz+CoreDataClass.m in Sources */,
+				3E1645C720CF986500FADD67 /* Model.xcdatamodeld in Sources */,
+				3E50CEBE20CDFCC80094C93E /* SQL_FMDB_CoreData.xcdatamodeld in Sources */,
+				3EEBBC0620D1FE6700C9F71D /* Student+CoreDataClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3E50CEB920CDFCC70094C93E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E50CEBA20CDFCC70094C93E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E50CEC120CDFD800094C93E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E50CEC220CDFD800094C93E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E50CEC720CDFD830094C93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3E50CEC820CDFD830094C93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LIBRARY_SEARCH_PATHS = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E50CECA20CDFD830094C93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "SQL&FMDB&CoreData/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "gao.SQL-FMDB-CoreData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E50CECB20CDFD830094C93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "SQL&FMDB&CoreData/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "gao.SQL-FMDB-CoreData";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E50CEAB20CDFCC00094C93E /* Build configuration list for PBXProject "SQL&FMDB&CoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E50CEC720CDFD830094C93E /* Debug */,
+				3E50CEC820CDFD830094C93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E50CEC920CDFD830094C93E /* Build configuration list for PBXNativeTarget "SQL&FMDB&CoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E50CECA20CDFD830094C93E /* Debug */,
+				3E50CECB20CDFD830094C93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3E1645C520CF986500FADD67 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3E128EE420CFB3E900D6DD15 /* Model 4.xcdatamodel */,
+				3EDCBB8220CF9B96008FBA7C /* Model 3.xcdatamodel */,
+				3EDCBB8120CF9B8C008FBA7C /* Model 2.xcdatamodel */,
+				3E1645C620CF986500FADD67 /* Model.xcdatamodel */,
+			);
+			currentVersion = 3E1645C620CF986500FADD67 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		3E50CEBC20CDFCC80094C93E /* SQL_FMDB_CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3E50CEBD20CDFCC80094C93E /* SQL_FMDB_CoreData.xcdatamodel */,
+			);
+			currentVersion = 3E50CEBD20CDFCC80094C93E /* SQL_FMDB_CoreData.xcdatamodel */;
+			path = SQL_FMDB_CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3E50CEA820CDFCC00094C93E /* Project object */;
+}

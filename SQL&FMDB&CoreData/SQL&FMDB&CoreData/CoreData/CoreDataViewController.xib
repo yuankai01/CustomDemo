@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CoreDataViewController">
+            <connections>
+                <outlet property="tableView" destination="acp-Ow-x7F" id="b1s-5y-Nbd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="83i-Xn-kyi">
+                    <rect key="frame" x="10" y="40" width="355" height="40"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMe-1Q-cuo">
+                            <rect key="frame" x="0.0" y="0.0" width="63" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="插入"/>
+                            <connections>
+                                <action selector="insert:" destination="-1" eventType="touchUpInside" id="Sdi-iK-TZx"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfX-oC-LbR">
+                            <rect key="frame" x="73" y="0.0" width="63" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="删除"/>
+                            <connections>
+                                <action selector="delete:" destination="-1" eventType="touchUpInside" id="8Cy-sW-oMu"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgX-Sk-jtC">
+                            <rect key="frame" x="146" y="0.0" width="63" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="更新"/>
+                            <connections>
+                                <action selector="update:" destination="-1" eventType="touchUpInside" id="vm9-HU-nla"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vwu-GL-PcX">
+                            <rect key="frame" x="219" y="0.0" width="63" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="查询"/>
+                            <connections>
+                                <action selector="select:" destination="-1" eventType="touchUpInside" id="vUY-Qh-alR"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJN-jY-SkP">
+                            <rect key="frame" x="292" y="0.0" width="63" height="40"/>
+                            <color key="backgroundColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <state key="normal" title="排序"/>
+                            <connections>
+                                <action selector="order:" destination="-1" eventType="touchUpInside" id="F6s-kX-bKB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="xJ4-EY-jHk"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="acp-Ow-x7F">
+                    <rect key="frame" x="0.0" y="90" width="375" height="567"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="acp-Ow-x7F" firstAttribute="top" secondItem="83i-Xn-kyi" secondAttribute="bottom" constant="10" id="I2f-Uk-Var"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="83i-Xn-kyi" secondAttribute="trailing" constant="10" id="VqM-lV-ITF"/>
+                <constraint firstItem="acp-Ow-x7F" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="XR0-D0-max"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="acp-Ow-x7F" secondAttribute="trailing" id="c9s-ad-gbj"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="acp-Ow-x7F" secondAttribute="bottom" constant="10" id="lSR-H9-tN1"/>
+                <constraint firstItem="83i-Xn-kyi" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="20" id="mkk-nC-2tJ"/>
+                <constraint firstItem="83i-Xn-kyi" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="rbI-8v-uTF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+        </view>
+    </objects>
+</document>

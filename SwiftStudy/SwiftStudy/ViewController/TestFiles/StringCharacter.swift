@@ -111,7 +111,7 @@ class StringCharacter: NSObject {
         for character in "Dog!🐶" {
             print(character)
         }
-        // D
+        // D 
         // o
         // g
         // !
