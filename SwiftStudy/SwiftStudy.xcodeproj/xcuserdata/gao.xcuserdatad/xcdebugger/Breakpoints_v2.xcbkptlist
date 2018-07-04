@@ -25,8 +25,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "102"
             endingLineNumber = "102"
-            landmarkName = "getLearnPlanList()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -41,8 +41,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
             endingLineNumber = "128"
-            landmarkName = "getLearnPlanList()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -57,8 +57,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
             endingLineNumber = "70"
-            landmarkName = "loadMore()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -73,8 +73,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "62"
             endingLineNumber = "62"
-            landmarkName = "refresh()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -89,8 +89,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -105,8 +105,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
