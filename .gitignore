@@ -1,4 +1,7 @@
 
+SwiftStudy/SwiftStudy.xcodeproj/project.xcworkspace/xcuserdata/gao.xcuserdatad/UserInterfaceState.xcuserstate
 *.xcuserstate
-.DS_Store
-*.xcodeproj
+
+## Build generated
+build/
+DerivedData
