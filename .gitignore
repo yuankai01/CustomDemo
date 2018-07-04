@@ -1,6 +1,8 @@
 
 SwiftStudy/SwiftStudy.xcodeproj/project.xcworkspace/xcuserdata/gao.xcuserdatad/UserInterfaceState.xcuserstate
 *.xcuserstate
+.DS_Store
+*/.DS_Store
 
 ## Build generated
 build/
