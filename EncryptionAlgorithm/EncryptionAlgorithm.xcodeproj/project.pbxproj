@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E8FFBE720EC5B6A000F343D /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8FFBE520EC5B6A000F343D /* LaunchImage.png */; };
+		3E8FFBE820EC5B6A000F343D /* LaunchImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E8FFBE620EC5B6A000F343D /* LaunchImage2.png */; };
 		3EB4744820EB473C00AD5E92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB4744720EB473C00AD5E92 /* AppDelegate.m */; };
 		3EB4744B20EB473C00AD5E92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB4744A20EB473C00AD5E92 /* ViewController.m */; };
 		3EB4744E20EB473C00AD5E92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB4744C20EB473C00AD5E92 /* Main.storyboard */; };
 		3EB4745020EB474400AD5E92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB4744F20EB474400AD5E92 /* Assets.xcassets */; };
 		3EB4745320EB474400AD5E92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB4745120EB474400AD5E92 /* LaunchScreen.storyboard */; };
 		3EB4745620EB474400AD5E92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB4745520EB474400AD5E92 /* main.m */; };
-		3EB4747D20EB59C800AD5E92 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB4747C20EB59C800AD5E92 /* LaunchImage.png */; };
-		3EB4747F20EB5A7900AD5E92 /* LaunchImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB4747E20EB5A7900AD5E92 /* LaunchImage2.png */; };
 		3EB4749720EB638E00AD5E92 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB4748220EB638E00AD5E92 /* NSString+MD5.m */; };
 		3EB4749820EB638E00AD5E92 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB4748520EB638E00AD5E92 /* GTMBase64.m */; };
 		3EB4749920EB638E00AD5E92 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB4748820EB638E00AD5E92 /* NSData+Base64.m */; };
@@ -27,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E8FFBE520EC5B6A000F343D /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		3E8FFBE620EC5B6A000F343D /* LaunchImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage2.png; sourceTree = "<group>"; };
 		3EB4744320EB473C00AD5E92 /* EncryptionAlgorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncryptionAlgorithm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB4744620EB473C00AD5E92 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3EB4744720EB473C00AD5E92 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -37,8 +39,6 @@
 		3EB4745220EB474400AD5E92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EB4745420EB474400AD5E92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EB4745520EB474400AD5E92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3EB4747C20EB59C800AD5E92 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
-		3EB4747E20EB5A7900AD5E92 /* LaunchImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage2.png; sourceTree = "<group>"; };
 		3EB4748120EB638E00AD5E92 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
 		3EB4748220EB638E00AD5E92 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		3EB4748420EB638E00AD5E92 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
@@ -101,9 +101,9 @@
 				3EB4748020EB638E00AD5E92 /* MD5 */,
 				3EB4748B20EB638E00AD5E92 /* RSA&SHA */,
 				3EB4745120EB474400AD5E92 /* LaunchScreen.storyboard */,
-				3EB4747C20EB59C800AD5E92 /* LaunchImage.png */,
-				3EB4747E20EB5A7900AD5E92 /* LaunchImage2.png */,
 				3EB4745420EB474400AD5E92 /* Info.plist */,
+				3E8FFBE520EC5B6A000F343D /* LaunchImage.png */,
+				3E8FFBE620EC5B6A000F343D /* LaunchImage2.png */,
 				3EB4745520EB474400AD5E92 /* main.m */,
 			);
 			path = EncryptionAlgorithm;
@@ -213,11 +213,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EB4747D20EB59C800AD5E92 /* LaunchImage.png in Resources */,
+				3E8FFBE720EC5B6A000F343D /* LaunchImage.png in Resources */,
 				3EB4745320EB474400AD5E92 /* LaunchScreen.storyboard in Resources */,
 				3EB4745020EB474400AD5E92 /* Assets.xcassets in Resources */,
 				3EB4744E20EB473C00AD5E92 /* Main.storyboard in Resources */,
-				3EB4747F20EB5A7900AD5E92 /* LaunchImage2.png in Resources */,
+				3E8FFBE820EC5B6A000F343D /* LaunchImage2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
