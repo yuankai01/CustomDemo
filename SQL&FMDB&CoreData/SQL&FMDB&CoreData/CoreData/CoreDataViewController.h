@@ -34,8 +34,6 @@
 
 /* 注释 https://blog.csdn.net/willluckysmile/article/details/76464249
  ios10.3之CoreData的详细教程
- 
- 
  */
 
 /* 注释  http://www.demodashi.com/demo/11041.html
@@ -45,7 +43,7 @@
  */
 /* 创建CoreDateModel 方法
  1、创建工程的时候勾选CoreData
- 2、New - File - iOS - CoreData <Data Molde / Mapping Model 两个可选，一般建Data Molde>
+ 2、New - File - iOS - CoreData <Data Molde / Mapping Model (映射模型) 两个可选，一般建Data Molde>
  */
 
 /* 注释 

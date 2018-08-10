@@ -41,7 +41,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "573"
             endingLineNumber = "573"
-            landmarkName = "-numberOfSectionsInTableView:"
+            landmarkName = "-coreDataQueue"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,7 +57,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "585"
             endingLineNumber = "585"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkName = "-receiveContextSave:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,23 +73,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "529"
             endingLineNumber = "529"
-            landmarkName = "-receiveContextSave:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SQL&amp;FMDB&amp;CoreData/CoreData/CoreDataViewController.m"
-            timestampString = "551087550.488"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "634"
-            endingLineNumber = "634"
-            landmarkName = "-configureCell:withStudent:"
+            landmarkName = "-associatedEntity"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

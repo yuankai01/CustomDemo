@@ -208,6 +208,67 @@
     [NSManagedObjectContext mergeChangesFromRemoteContextSave:deletedDict intoContexts:@[self.context]];
 }
 
+#pragma mark - 清空所有数据
+//删除所有数据 批量删除所有数据
+- (void)clear
+{
+    //1.创建查询请求 EntityName：想要清楚的实体的名字
+    NSFetchRequest *request = [Student fetchRequest];
+    //    request.predicate =
+    
+    //2.创建删除请求  参数是：查询请求
+    //NSBatchDeleteRequest是iOS9之后新增的API，不兼容iOS8及以前的系统
+    NSBatchDeleteRequest *deleteRequest = [[NSBatchDeleteRequest alloc] initWithFetchRequest:request];
+    deleteRequest.resultType = NSBatchDeleteResultTypeObjectIDs;
+    //3.使用存储调度器(NSPersistentStoreCoordinator)执行删除请求
+    /**
+     Request：存储器请求（NSPersistentStoreRequest）  删除请求NSBatchDeleteRequest继承于NSPersistentStoreRequest
+     context：管理对象上下文
+     */
+    NSBatchDeleteResult *deleteResult = [self.persistentStoreCoordinator executeRequest:deleteRequest withContext:self.context error:nil];
+    
+    /*
+     //执行批量删除
+     //* 与查询请求NSFetchRequest不同的是，删除请求NSBatchDeleteRequest是由存储调度器来执行的*
+     //实验：下面两种方法都可以起到批量删除的作用
+     NSBatchDeleteResult *deleteResult = [self.context executeRequest:deleteRequest error:nil];
+     NSBatchDeleteResult *deleteResult2 = [self.coordinator executeRequest:deleteRequest withContext:self.context error:nil];
+     */
+    
+    //通知上下文数据更新
+    NSArray<NSManagedObjectID *> *deletedObjectIDs = deleteResult.result;
+    NSDictionary *deletedDict = @{NSDeletedObjectsKey : deletedObjectIDs};
+    [NSManagedObjectContext mergeChangesFromRemoteContextSave:deletedDict intoContexts:@[self.context]];
+}
+
+//直接移除CoreData数据库
+- (void)removeCoreDataDB
+{
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    NSString *documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    
+    static NSString *kFileName = @"kFileName";
+    //沙盒中三个文件
+    NSString *filePath1 = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.db",kFileName]];
+    
+    NSString *filePath2 = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.db-shm",kFileName]];
+    NSString *filePath3 = [documentsPath stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.db-wal",kFileName]];
+    
+    NSError *error;
+    
+    BOOL success = [fileManager removeItemAtPath:filePath1 error:&error];
+    [fileManager removeItemAtPath:filePath2 error:nil];
+    [fileManager removeItemAtPath:filePath3 error:nil];
+    
+    if (success) {
+        NSLog(@"Remove fiel:%@ Success!",kFileName);
+    }
+    else
+    {
+        NSLog(@"Could not delete file -:%@ ",[error localizedDescription]);
+    }
+}
+
 //更新
 - (IBAction)update:(id)sender {
 //    [self batchUpdate];
@@ -540,28 +601,6 @@
     
 }
 
-#pragma mark - 版本升级 数据迁移
-/* 注释
- 这里说一下新增加的2个参数的意义：
- NSMigratePersistentStoresAutomaticallyOption = YES，那么Core Data会试着把之前低版本的出现不兼容的持久化存储区迁移到新的模型中，这里的例子里，Core Data就能识别出是新表，就会新建出新表的存储区来。
- NSInferMappingModelAutomaticallyOption = YES,这个参数的意义是Core Data会根据自己认为最合理的方式去尝试MappingModel，从源模型实体的某个属性，映射到目标模型实体的某个属性。
- Migrate : 英  [maɪ'greɪt; 'maɪgreɪt]   美  ['maɪɡret]
- vi. 移动；随季节而移居；移往
- */
-- (void)versionModel
-{
-    //创建持久化存储助理：数据库
-    NSPersistentStoreCoordinator * store = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.managedObjectModel];
-    //请求自动轻量级迁移
-    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
-                             [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
-                             [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption,
-                             nil];
-    NSError *error = nil;
-    //设置数据库相关信息 添加一个持久化存储库并设置存储类型和路径，NSSQLiteStoreType：SQLite作为存储库
-    [store addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqlUrl options:options error:&error];
-}
-
 #pragma mark - tableView
 //- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 //{
@@ -727,10 +766,20 @@
          */
         NSError *error;
         // 为 persistentStoreCoordinator 指定本地存储的类型，这里指定的是 SQLite
+        /* CoreData的DataModel的版本控制和迁移（仅介绍轻量迁移）
+         https://blog.csdn.net/marvindev/article/details/41804739
+         //请求自动轻量级迁移，标准迁移：https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/CoreDataVersioning/Articles/Introduction.html
+         //添加新字段进行版本升级数据迁移时，如果不进行下面代码，会报错：SCocoaErrorDomain Code=134100。
+         */
+        NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
+                                 [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption,
+                                 nil];
+        
         [_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType
                                                   configuration:nil
                                                             URL:sqliteURL
-                                                        options:nil
+                                                        options:options
                                                           error:&error];
         if (error) {
             NSLog(@"falied to create persistentStoreCoordinator %@", error.localizedDescription);
@@ -744,6 +793,27 @@
     }
     
     return _persistentStoreCoordinator;
+}
+#pragma mark - 版本升级 数据迁移
+/* 注释：添加新字段进行版本升级数据迁移时，如果不进行下面代码，会报错：SCocoaErrorDomain Code=134100。
+ 这里说一下新增加的2个参数的意义：
+ NSMigratePersistentStoresAutomaticallyOption = YES，那么Core Data会试着把之前低版本的出现不兼容的持久化存储区迁移到新的模型中，这里的例子里，Core Data就能识别出是新表，就会新建出新表的存储区来。
+ NSInferMappingModelAutomaticallyOption = YES,这个参数的意义是Core Data会根据自己认为最合理的方式去尝试MappingModel，从源模型实体的某个属性，映射到目标模型实体的某个属性。
+ Migrate : 英  [maɪ'greɪt; 'maɪgreɪt]   美  ['maɪɡret]
+ vi. 移动；随季节而移居；移往
+ */
+- (void)versionModel
+{
+    //创建持久化存储助理：数据库
+    NSPersistentStoreCoordinator * store = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:self.managedObjectModel];
+    //请求自动轻量级迁移
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:
+                             [NSNumber numberWithBool:YES], NSMigratePersistentStoresAutomaticallyOption,
+                             [NSNumber numberWithBool:YES], NSInferMappingModelAutomaticallyOption,
+                             nil];
+    NSError *error = nil;
+    //设置数据库相关信息 添加一个持久化存储库并设置存储类型和路径，NSSQLiteStoreType：SQLite作为存储库
+    [store addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:sqlUrl options:options error:&error];
 }
 
 // 用来获取 document 目录
